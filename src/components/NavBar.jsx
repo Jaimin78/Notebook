@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { Link, useLocation } from 'react-router-dom';
+import Alert from './Alert';
 
 const NavBar = () => {
   let location = useLocation();
@@ -31,6 +32,7 @@ const NavBar = () => {
           </div>
         </div>
       </nav>
+      <Alert msg={"This is Primary alert"} />
     </>
   )
 }
